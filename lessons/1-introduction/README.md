@@ -1,15 +1,11 @@
-# 1. Primeros pasos con R
+# 1. Introducción
 
 ## Índice
 
-[0. Prerrequisitos](#0-prerrequisitos)  
 [1. Conceptos previos](#1-conceptos-previos)  
-[2. Hola Mundo](#2-hola-mundo)
-
-## 0. Prerrequisitos
-
-- R: [Comprehensive R Archive Network (CRAN)](https://cloud.r-project.org/)
-- RStudio: [RStudio Desktop](https://posit.co/download/rstudio-desktop/)
+[2. Instalación](#2-instalacion)  
+[3. Hola Mundo](#3-hola-mundo)  
+[4. Gestión de paquetes](#4-gestion-de-paquetes)
 
 ## 1. Conceptos previos
 
@@ -46,7 +42,12 @@
 4. **Comunicación de resultados**: Realización de informes, presentación y conclusiones.
 5. **Aplicación de resultados obtenidos**: Utilización de modelos predictivos, etc.
 
-## 2. Hola Mundo
+## 2. Instalación
+
+- R: [Comprehensive R Archive Network (CRAN)](https://cloud.r-project.org/)
+- RStudio: [RStudio Desktop](https://posit.co/download/rstudio-desktop/)
+
+## 3. Hola Mundo
 
 1. Abrir RStudio
 2. Crear un fichero nuevo: File > New File > R Script ( `Ctrl + Mayus + N` )
@@ -56,6 +57,25 @@
 
 4. Ejecutar línea actual: Code > Run Selected Line(s) ( `Ctrl + Enter` )
 
+## 4. Gestión de paquetes
+
+Para instalar nuevos paquetes, puede hacerse desde la consola de R de esta forma:
+
+    install.packages("lubridate")
+
+Para activarlos en la sesión de trabajo actual:
+
+    library(lubridate)
+
+Para ver los paquetes instalados actualmente:
+
+    installed.packages()
+
+Para eliminar un paquete:
+
+    remove.packages("lubridate")
+
 ## Referencias
 
-[¿Qué es R y para qué se usa?](https://www.unir.net/ingenieria/revista/lenguaje-r-big-data/)
+[¿Qué es R y para qué se usa?](https://www.unir.net/ingenieria/revista/lenguaje-r-big-data/)  
+[R Packages: A Beginner's Tutorial](https://www.datacamp.com/tutorial/r-packages-guide)
