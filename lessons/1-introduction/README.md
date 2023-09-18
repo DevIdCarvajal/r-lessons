@@ -3,9 +3,9 @@
 ## Índice
 
 [1. Conceptos previos](#1-conceptos-previos)  
-[2. Instalación](#2-instalacion)  
+[2. Instalación](#2-instalación)  
 [3. Hola Mundo](#3-hola-mundo)  
-[4. Gestión de paquetes](#4-gestion-de-paquetes)
+[4. Gestión de paquetes](#4-gestión-de-paquetes)
 
 ## 1. Conceptos previos
 

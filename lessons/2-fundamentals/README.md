@@ -7,7 +7,7 @@
 [3. Tipos de datos](#3-tipos-de-datos)  
 [4. Operadores](#4-operadores)  
 [5. Coerciones](#5-coerciones)  
-[6. Funciones matemáticas](#6-funciones-matematicas)  
+[6. Funciones matemáticas](#6-funciones-matemáticas)  
 [7. Manejo de cadenas](#7-manejo-de-cadenas)  
 [8. Manejo de fecha y hora](#8-manejo-de-fecha-y-hora)  
 [9. Estructuras de control de flujo](#9-estructuras-de-control-de-flujo)
