@@ -76,6 +76,8 @@ R presenta todos estos tipos básicos de datos:
       TRUE
       FALSE
 
+- NA (sin valor)
+
 ## 4. Operadores
 
 Dependiendo del tipo de datos, este soportará unos operadores u otros:
@@ -138,7 +140,34 @@ El lenguaje ofrece un catálogo de funciones predefinidas:
 
 ## 7. Manejo de cadenas
 
-.
+R permite strings multilínea:
+
+    myText <- "Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua."
+
+Donde R añade el carácter fin de línea ( `\n` ) automáticamente y para ver el texto interpretándolo en la salida, es necesario usar la función `cat`:
+
+    cat(myText)
+    myText
+
+Para saber la longitud de un string, existe la función nchar:
+
+    nchar(myText)
+
+Se puede comprobar si un substring está contenido en otro string con grepl:
+
+    grepl("tempor", myText)
+    grepl("totum", myText)
+
+Permite escapar caracteres para que no sean interpretados:
+
+    boss <- "Me dijo que era un tanto \"impredecible\""
+
+O usar caracteres especiales:
+
+    \\ \n \r \t \b
 
 ## 8. Manejo de fecha y hora
 
