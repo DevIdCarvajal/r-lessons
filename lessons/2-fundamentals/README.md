@@ -171,7 +171,21 @@ O usar caracteres especiales:
 
 ## 8. Manejo de fecha y hora
 
-.
+El primer paso es cargar los paquetes necesarios:
+
+    library(lubridate)
+    library(anytime)
+    library(hms)
+    library(readr)
+
+Algunas funciones útiles serían las siguientes:
+
+    today()
+    now()
+    ymd("1912 04 20")
+    mdy("1912 04 20")
+    hms(56,12,15)
+    ymd_hms("1912 04 20 23:19:59")
 
 ## 9. Estructuras de control de flujo
 

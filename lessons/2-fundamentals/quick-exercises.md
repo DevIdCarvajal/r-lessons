@@ -39,3 +39,16 @@ Aunque están planteados cubriendo un espectro de dificultad incremental, si te 
 20. Crear las variables **i** y **j** con valor **0**. A continuación crear **un bucle que itere 11 veces usando i como iterador**. En cada iteración se deberá **sumar al valor de j el valor de i al cuadrado**
 21. Crear una variable **sumaPares** con valor **0**. A continuación crear un bucle que **itere 10 veces (i < 10)**. Si la iteración es par se deberá **sumar a sumaPares el número de la iteración actual (i)**
 22. Crear una variable **contarHasta10for** con valor **0** e incrementar su valor con un **bucle for hasta que se verifique que contarHasta10for == 10**
+
+## Manejo de fecha y hora
+
+23. Poblar una variable llamada `start_date` con una representación en formato fecha del string `23012017`.
+24. Usar la función `today` para imprimir la fecha actual.
+25. Extraer el año de la variable `start_date` del ejercicio anterior.
+26. Extraer el mes de la variable `start_date`.
+27. Extraer el día de la variable `start_date`.
+28. Asignar el mes de la variable `start_date` a febrero.
+29. Sumar 6 días a la `start_date`. (¿Qué ha pasado con el mes?)
+30. Restar 3 meses a la variable `start_date`.
+31. Poblar una variable llamada `concatenated_dates` con un vector de fechas que contengan los siguientes valores: `18.09.2023`, `22.10.2023`, `09.01.2024`.
+32. Calcular de la forma más sencilla posible la suma de 1 a 10 días (determinando la cantidad de días aleatoriamente) a la variable `start_date`.
