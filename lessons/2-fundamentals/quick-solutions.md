@@ -100,13 +100,32 @@
 
 ## Manejo de fecha y hora
 
-23. Poblar una variable llamada `start_date` con una representación en formato fecha del string `23012017`.
-24. Usar la función `today` para imprimir la fecha actual.
-25. Extraer el año de la variable `start_date` del ejercicio anterior.
-26. Extraer el mes de la variable `start_date`.
-27. Extraer el día de la variable `start_date`.
-28. Asignar el mes de la variable `start_date` a febrero.
-29. Sumar 6 días a la `start_date`. (¿Qué ha pasado con el mes?)
-30. Restar 3 meses a la variable `start_date`.
-31. Poblar una variable llamada `concatenated_dates` con un vector de fechas que contengan los siguientes valores: `18.09.2023`, `22.10.2023`, `09.01.2024`.
-32. Calcular de la forma más sencilla posible la suma de 1 a 10 días (determinando la cantidad de días aleatoriamente) a la variable `start_date`.
+23.
+        start_date <- dmy("23012017")
+
+24.
+        today()
+
+25.
+        year(start_date)
+
+26.
+        month(start_date)
+
+27.
+        day(start_date)
+
+28.
+        month(start_date) <- 2
+
+29.
+        day(start_date) <- day(start_date) + 6
+
+30.
+        month(start_date) <- month(start_date) - 3
+
+31.
+        concatenated_dates <- dmy(c("18.09.2023", "22.10.2023", "09.01.2024"))
+
+32.
+        day(start_date) <- day(start_date) + ceiling(runif(n=1, min=0, max=10))
