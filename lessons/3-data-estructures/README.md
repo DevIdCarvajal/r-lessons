@@ -132,6 +132,14 @@ Se puede acceder a columnas completas de diversas formas:
 
 Tienen algunas cosas en común con las matrices como añadir o borrar filas o columnas, saber su longitud total, dimensiones o longitud por fila o columna, o combinar data frames entre sí.
 
+## Resumen comparativo
+
+||Homogeneo|Heterogeneo
+-|-|-
+1d|Vector|Lista
+2d|Matriz|Data frame
+nd|Array
+
 ## Referencias
 
 [Vectores](https://www.w3schools.com/r/r_vectors.asp)  
