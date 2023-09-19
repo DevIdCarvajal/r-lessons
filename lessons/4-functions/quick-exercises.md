@@ -12,10 +12,10 @@
 8. Crear la función **esPar** que acepte como argumento **un número** y devuelva **True si es par y False si es impar**
 9. Crear la función **ordenarLista** que acepte como argumento **un vector de números** y devuelva un **vector ordenado de menor a mayor**
 10. Crear la función **obtenerPares** que acepte como argumento **un vector de números** y devuelva un **vector con los elementos pares**
-11. Crear la función **pintarVector** que acepte como argumento **un vector** y devuelva **una cadena de texto, por ejemplo: [0, 1, 2] => '[0, 1, 2]'**
-12. Crear la función **eliminarDuplicados** que acepte como argumento **una lista** y devuelva **una lista en el que se hayan eliminado los duplicados**
-13. Crear la función **ordenarLista2** que acepte como argumento **una lista de números** y devuelva una **lista ordenada de mayor a menor**
-14. Crear la función **obtenerImpares** que acepte como argumento **una lista de números** y devuelva una **lista con los elementos impares**
-15. Crear la función **sumarLista** que acepte como argumento **una lista numérica** y devuelva **la suma de los números en la lista, por ejemplo: [1, 2, 3] => 6**
-16. Crear la función **multiplicarLista** que acepte como argumento **una lista numérica** y devuelva **la multiplicación de los números en la lista, por ejemplo: [2, 3, 4] => 24**
+11. Crear la función **pintarVector** que acepte como argumento **un vector** y devuelva **una cadena de texto, por ejemplo: c(1, 2, 3) => '(1, 2, 3)'**
+12. Crear la función **eliminarDuplicados** que acepte como argumento **un vector** y devuelva **un vector en el que se hayan eliminado los duplicados**
+13. Crear la función **ordenarVector2** que acepte como argumento **un vector de números** y devuelva un **vector ordenado de mayor a menor**
+14. Crear la función **obtenerImpares** que acepte como argumento **un vector de números** y devuelva un **vector con los elementos impares**
+15. Crear la función **sumarLista** que acepte como argumento **un vector de números** y devuelva **la suma de los números en el vector, por ejemplo: c(1, 2, 3) => 6**
+16. Crear la función **multiplicarVector** que acepte como argumento **un vector de números** y devuelva **la multiplicación de los números en el vector, por ejemplo: c(2, 3, 4) => 24**
 17. Crear la función **multiplicacionPro** que acepte como argumentos **dos números** y devuelva **el resultado de su multiplicación**, pero NO PUEDE usar el operador de multiplicación (`*`) para calcularlo ni usar otras funciones realizadas previamente. Es decir, solo puede usar el operador suma (`+`)
