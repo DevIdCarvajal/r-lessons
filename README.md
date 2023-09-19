@@ -18,7 +18,8 @@
 
 ## Referencias generales
 
-[Documentación oficial de R](https://cran.r-project.org/manuals.html)
+[Documentación oficial de R](https://cran.r-project.org/manuals.html)  
+[R Documentation (DataCamp)](https://www.rdocumentation.org/)
 
 [w3schools](https://www.w3schools.com/r/default.asp)  
 [codecademy](https://www.codecademy.com/learn/learn-r)
