@@ -2,13 +2,9 @@
 
 ## Índice
 
-[1. Operaciones con ficheros](#1-operaciones-con-ficheros)  
+[1. Operaciones con ficheros y carpetas](#1-operaciones-con-ficheros-y-carpetas)  
 [2. Lectura y escritura de datos](#2-lectura-y-escritura-de-datos)  
-[3. readr](#3-readr)  
-[. ]()  
-[. ]()  
-[. ]()  
-[. ]()
+[3. Carga de datos con paquetes externos](#3-carga-de-datos-con-paquetes-externos)
 
 ## 1. Operaciones con ficheros y carpetas
 
@@ -137,7 +133,7 @@ Dependiendo del tipo de ficheros, `readr` ofrece algunas funciones específicas:
 
 Por ejemplo, para el caso de CSV:
 
-    dataFromCsv <- read_csv('./data/hotel_bookings_clean.csv', show_col_types = FALSE)
+    dataFromCsv <- read_csv('hotel_bookings_clean.csv', show_col_types = FALSE)
 
 ### Excel
 
@@ -146,31 +142,31 @@ Para la carga de datos desde ficheros de Excel, se puede hacer mediante el paque
     install.packages("readxl")
     library(readxl)
 
-    dataFromExcel <- read_excel("./data/tesla_deaths.xlsx", sheet = 1)
+    dataFromExcel <- read_excel("tesla_deaths.xlsx", sheet = 1)
 
 Nota: `readxl` pertenece a `tidyverse`, de manera que no necesita instalarse si ya se instaló la colección completa.
 
-### rjson
+### JSON
 
 Para la carga de datos desde ficheros JSON, se puede hacer mediante el paquete `rjson`:
 
     install.packages("rjson")
     library(rjson)
 
-    dataFromJson <- fromJSON(file = "./data/tesla_deaths.xlsx")
+    dataFromJson <- fromJSON(file = "drake_data.json")
 
 Que puede ser convertido en un data frame de esta forma:
 
     dataFrameFromJson = as.data.frame(dataFromJson[1])
 
-### xml2
+### XML
 
 Para la carga de datos desde ficheros XML, se puede hacer mediante el paquete `xml2`:
 
     install.packages("xml2")
     library(xml2)
 
-    dataFromXml <- read_xml("./data/plant_catalog.xml")
+    dataFromXml <- read_xml("plant_catalog.xml")
     dataXmlParse <- xmlParse(dataFromXml)
 
 Que puede ser convertido en un data frame de esta forma:
@@ -178,9 +174,19 @@ Que puede ser convertido en un data frame de esta forma:
     dataNodes = getNodeSet(dataXmlParse, "//PLANT")
     dataFrameXml <- xmlToDataFrame(nodes=dataNodes)
 
-### pdftools
+### PDF
 
-.
+Para la lectura de texto desde ficheros PDF, se puede hacer mediante el paquete `pdftools`:
+
+    install.packages("pdftools")
+    library(pdftools)
+
+    textFromPdf <- pdf_text("1403.2805.pdf")
+    cat(txt[18])
+
+Y para obtener datos de tablas en el PDF, se puede usar el paquete `tabulizer`:
+
+    dataFromPdf <- tabulizer::extract_tables(file = "1403.2805.pdf", pages = 18:19)
 
 ## Referencias
 
@@ -192,6 +198,12 @@ Que puede ser convertido en un data frame de esta forma:
 [read.table documentation](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/read.table)  
 
 [How to import data into R](https://www.datacamp.com/tutorial/r-data-import-tutorial)  
-[readr documentation](https://readr.tidyverse.org/index.html)  
-[]()  
-[]()
+[readr documentation](https://readr.tidyverse.org/)  
+[readxl documentation](https://readxl.tidyverse.org/)  
+[rjson documentation](https://www.rdocumentation.org/packages/rjson/versions/0.2.21)  
+[xml2 documentation](https://xml2.r-lib.org/)
+
+[pdftools documentation](https://docs.ropensci.org/pdftools/)  
+[tabulizer documentation](https://github.com/ropensci/tabulizer)  
+[pdftools & tabulizer example (I)](https://redwallanalytics.com/2020/03/31/parsing-mass-municipal-pdf-cafrs-with-tabulizer-pdftools-and-aws-textract-part-1/)  
+[pdftools & tabulizer example (II)](https://www.r-bloggers.com/2020/04/tabulizer-and-pdftools-together-as-super-powers-part-2/)
