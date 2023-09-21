@@ -2,8 +2,8 @@
 
 ## Objetivos
 
-- Conocer los elementos básicos del lenguaje, las estructuras de control, estructuras de datos y elementos sintácticos específicos de R.
-- Introducir algunos de los paquetes más habituales del lenguaje para manipulación y visualización de datos.
+- Conocer los elementos básicos del lenguaje: sintaxis, estructuras de control, estructuras de datos y funciones.
+- Introducir algunos de los paquetes más habituales del lenguaje para la recolección y preprocesamiento de datos.
 
 ## Temario
 
@@ -11,10 +11,9 @@
 2. Fundamentos
 3. Estructuras de datos
 4. Funciones
-5. Lectura y escritura de datos
+5. Recopilación de datos
 6. Preparación y limpieza de datos
 7. Manipulación de datos
-8. Visualización de datos
 
 ## Referencias generales
 

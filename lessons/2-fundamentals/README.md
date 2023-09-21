@@ -174,9 +174,7 @@ O usar caracteres especiales:
 El primer paso es cargar los paquetes necesarios:
 
     library(lubridate)
-    library(anytime)
     library(hms)
-    library(readr)
 
 Algunas funciones útiles serían las siguientes:
 
