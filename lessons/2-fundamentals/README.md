@@ -25,9 +25,9 @@ Esto son (asignaciones de) variables:
 
     name <- 'Espagueti'
     lastname <- "Volador"
-    age = 16
+    age <- 16
 
-Podemos mostrar su valor:
+Se puede mostrar su valor:
 
     name
     print(age)
@@ -51,7 +51,7 @@ Ejemplos de nombres válidos de variables:
 
 ## 3. Tipos de datos
 
-R presenta todos estos tipos básicos de datos:
+R presenta todos estos tipos primitivos de datos:
 
 - character/string:
   
@@ -82,12 +82,12 @@ R presenta todos estos tipos básicos de datos:
 
 Dependiendo del tipo de datos, este soportará unos operadores u otros:
 
-- Los strings, concatenación:
+- Los *strings*, concatenación:
 
       fullname <- "Anonymous"
       age <- 25
 
-      paste("Hola ", fullname, " tienes ", age)
+      paste("Hola,", fullname, "tienes", age, "años")
 
 - Los numéricos ofrecen operadores aritméticos:
 
@@ -99,7 +99,7 @@ Dependiendo del tipo de datos, este soportará unos operadores u otros:
     - Módulo: `10 %% 3`
     - División entera: `10 %/% 3`
 
-- Los booleans, operadores lógicos:
+- Los *booleans*, operadores lógicos:
 
     - Conjunción:
 
@@ -152,11 +152,11 @@ Donde R añade el carácter fin de línea ( `\n` ) automáticamente y para ver e
     cat(myText)
     myText
 
-Para saber la longitud de un string, existe la función nchar:
+Para saber la longitud de un string, existe la función `nchar`:
 
     nchar(myText)
 
-Se puede comprobar si un substring está contenido en otro string con grepl:
+Se puede comprobar si un *substring* está contenido en otro string con `grepl`:
 
     grepl("tempor", myText)
     grepl("totum", myText)
