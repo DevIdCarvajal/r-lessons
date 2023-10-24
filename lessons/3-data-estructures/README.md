@@ -43,7 +43,7 @@ Para generar vectores con secuencias de números no correlativos:
 
 Una lista es una colección de elementos que pueden ser de distintos tipos:
 
-    months <- list("enero", "febrero", "marzo", "septiembre")
+    months <- list("enero", 2, "marzo", TRUE)
 
 Tienen algunas cosas en común con los vectores como acceso, longitud, etc.
 
@@ -56,14 +56,14 @@ Para añadir elementos a la lista, bien por el final o en una posición concreta
     append(months, "octubre")
     append(months, "abril", after = 3)
 
-Para eliminar elementos, se debe generar una nueva lista subconjnto de la primera y reasignar:
+Para eliminar elementos, se debe generar una nueva lista subconjunto de la primera y reasignar:
 
     months <- months[-1]
-    months <- (months)[2:3]
+    months <- months[2:3]
 
 Se pueden unir listas:
 
-    moreMonths <- list("noviembre", "diciembre")
+    moreMonths <- list(3.14, "diciembre")
     totalMonths <- c(totalMonths, moreMonths)
 
 O iterar sobre ellas con un bucle:
@@ -89,6 +89,7 @@ Se puede acceder a un elemento en una posición concreta, obtener toda una fila 
     numbers[,2]
     numbers[c(1,2),]
     numbers[,c(1,2)]
+    numbers[c(1,2),c(1,2)]
 
 Para añadir filas o columnas a la matriz, o combinar matrices:
 
@@ -145,4 +146,6 @@ nd|Array
 [Vectores](https://www.w3schools.com/r/r_vectors.asp)  
 [Listas](https://www.w3schools.com/r/r_lists.asp)  
 [Matrices](https://www.w3schools.com/r/r_matrices.asp)  
-[Data Frames](https://www.w3schools.com/r/r_data_frames.asp)
+[Data Frames](https://www.w3schools.com/r/r_data_frames.asp)  
+[Arrays](https://www.w3schools.com/r/r_arrays.asp)  
+[Factors](https://www.w3schools.com/r/r_factors.asp)
