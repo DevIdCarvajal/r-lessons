@@ -77,7 +77,7 @@ R ofrece algunas funciones integradas para trabajar con ficheros de texto:
 - Lectura a una lista:
 
       housesList1 <- scan("houses_in.txt", what = list("", "", "", "", "", ""))
-      housesList2 <- scan("houses_in.csv", what = list(0.0, 0.0, 0, 0, 0.0, ""), skip = 1)
+      housesList2 <- scan("houses_in.txt", what = list(0.0, 0.0, 0, 0, 0.0, ""), skip = 1)
 
 - Lectura a una matriz:
 
