@@ -31,7 +31,7 @@ Lo más frecuente es encontrar datos no ordenados según estos criterios, presen
 
 Uno de los paquetes de `tidyverse` y con el que trabajan los demás de la colección es `tibble`, que define una nueva estructura de datos con dicho nombre muy similar al data frame pero con algunas diferencias:
 
-- Está más optimizada (realiza evaluación perezosa).
+- Está más optimizada (realiza carga perezosa).
 - Proporcionan una mayor información sobre el contenido y la estructura.
 - No cambian tipos de datos, nombres de variables o filas, etc.
 
@@ -41,7 +41,7 @@ Cuando se utiliza el paquete `readr`, este devuelve siempre un `tibble`. Otra op
 
     notasDf <- data.frame(asignatura = c("Matemáticas", "Física", "Economía"), nota = c(8.5, 7, 4.5))
 
-    notasTibble <- as_tibble(notas)
+    notasTibble <- as_tibble(notasDf)
 
 En caso de querer convertir un `tibble` en un data frame:
 
@@ -67,9 +67,9 @@ Las funciones mencionadas son `pivot_longer` y `pivot_wider`, que convierten a f
       Programación = c(6.5, 4, 9)
     )
 
-    notasDf_largo <- pivot_longer(df, Matemáticas:Programación, names_to = "Asignatura", values_to = "Nota")
+    notasDf_largo <- pivot_longer(notasDf, Matemáticas:Programación, names_to = "Asignatura", values_to = "Nota")
 
-    notasDf_ancho <- pivot_wider(df_largo, names_from = Asignatura, values_from = Nota)
+    notasDf_ancho <- pivot_wider(notasDf_largo, names_from = Asignatura, values_from = Nota)
 
 Además del pivoteo, existen otras funciones dentro del paquete para realizar la preparación de los datos, agrupadas en categorías:
 
